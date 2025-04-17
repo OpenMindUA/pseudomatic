@@ -1,5 +1,5 @@
 import hashlib
-import names
+from . import names
 
 LANGUAGES = {
     'default': {

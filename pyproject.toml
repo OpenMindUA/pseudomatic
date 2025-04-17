@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pseudomatic"
-version = "0.1.0"
+version = "0.1.1"
 description = "A tool for generating deterministic pseudonyms based on a seed string and selected language"
 readme = "README.md"
 requires-python = ">=3.12"
@@ -26,3 +26,23 @@ dependencies = []
 Homepage = "https://github.com/OpenMindUA/pseudomatic"
 Repository = "https://github.com/OpenMindUA/pseudomatic"
 Documentation = "https://github.com/OpenMindUA/pseudomatic#readme"
+
+[tool.hatch.build.targets.wheel]
+packages = ["pseudomatic"]
+
+[tool.hatch.build]
+exclude = [
+    "/.git",
+    "/.github",
+    "/.gitignore",
+    "/__pycache__",
+    "/.ruff_cache",
+    "/.venv",
+    "/dist",
+    "/build",
+    "*.egg-info",
+    "/.eggs",
+    "*.py[cod]",
+    "*$py.class",
+    "uv.lock",
+]
