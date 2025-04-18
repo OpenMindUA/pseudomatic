@@ -1,5 +1,4 @@
 import hashlib
-import random
 import uuid
 
 from . import names
