@@ -1,4 +1,6 @@
 import hashlib
+import random
+import uuid
 
 from . import names
 
@@ -17,12 +19,13 @@ LANGUAGES = {
     }
 }
 
-def pseudonym(seed: str, language: str = "en", theme: str = 'default') -> str:
+def pseudonym(seed: str = None, language: str = "en", theme: str = 'default') -> str:
     """
     Generate a pseudonym based on a seed string and language.
+    If seed is None or empty, a random seed will be generated.
 
     Args:
-        seed (str): The input seed string.
+        seed (str, optional): The input seed string. If None or empty, a random seed will be generated.
         language (str): The language code ("en" for English, "ua" for Ukrainian).
         theme (str): The theme for the pseudonym ("default", "business", or "market").
 
@@ -33,6 +36,10 @@ def pseudonym(seed: str, language: str = "en", theme: str = 'default') -> str:
         raise ValueError(f"Unsupported language: {language}")
 
     adjectives, nouns, gender = LANGUAGES[theme][language]
+
+    # Generate a random seed if none is provided
+    if seed is None or seed == "":
+        seed = str(uuid.uuid4())
 
     # Hash the seed using SHA-256
     hash_bytes = hashlib.sha256(seed.encode('utf-8')).digest()
@@ -49,4 +56,3 @@ def pseudonym(seed: str, language: str = "en", theme: str = 'default') -> str:
 
     # Combine into a pseudonym
     return f"{adjective} {noun}"
-
