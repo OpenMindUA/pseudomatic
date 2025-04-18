@@ -39,12 +39,12 @@ class TestPseudomatic(unittest.TestCase):
         seed = "test-seed"
         default_result = pseudonym(seed, theme="default")
         business_result = pseudonym(seed, theme="business")
-        market_result = pseudonym(seed, theme="market")
+        retail_result = pseudonym(seed, theme="retail")
 
         # Test that different themes produce different results
         self.assertNotEqual(default_result, business_result)
-        self.assertNotEqual(default_result, market_result)
-        self.assertNotEqual(business_result, market_result)
+        self.assertNotEqual(default_result, retail_result)
+        self.assertNotEqual(business_result, retail_result)
 
     def test_invalid_language(self):
         # Test that an invalid language raises a ValueError
@@ -76,10 +76,10 @@ class TestPseudomatic(unittest.TestCase):
         # Test with different themes
         default_result = pseudonym(theme="default")
         business_result = pseudonym(theme="business")
-        market_result = pseudonym(theme="market")
+        retail_result = pseudonym(theme="retail")
         self.assertNotEqual(default_result, business_result)
-        self.assertNotEqual(default_result, market_result)
-        self.assertNotEqual(business_result, market_result)
+        self.assertNotEqual(default_result, retail_result)
+        self.assertNotEqual(business_result, retail_result)
 
 if __name__ == "__main__":
     unittest.main()

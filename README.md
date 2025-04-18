@@ -57,7 +57,7 @@ print(random_pseudonym_ua)  # Example: "Цікавий Слон"
 
 # Use different themes
 business_pseudonym = pseudonym("JohnDoe", language="en", theme="business")
-market_pseudonym = pseudonym("JohnDoe", language="ua", theme="market")
+retail_pseudonym = pseudonym("JohnDoe", language="ua", theme="retail")
 ```
 
 ### From Command Line
@@ -67,7 +67,7 @@ Run the script directly:
 python -m pseudomatic
 ```
 
-This will generate example pseudonyms in English and Ukrainian using the 'market' theme.
+This will generate example pseudonyms in English and Ukrainian using the 'retail' theme.
 
 ## Project Structure
 

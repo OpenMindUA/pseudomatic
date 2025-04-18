@@ -12,9 +12,9 @@ LANGUAGES = {
         "en": (names.EN_ADJECTIVES_BUSINESS, names.EN_NOUNS_BUSINESS, names.EN_GENDER_BUSINESS),
         "ua": (names.UA_ADJECTIVES_BUSINESS, names.UA_NOUNS_BUSINESS, names.UA_GENDER_BUSINESS)
     },
-    'market': {
-        "en": (names.EN_ADJECTIVES_MARKET, names.EN_NOUNS_MARKET, names.EN_GENDER_MARKET),
-        "ua": (names.UA_ADJECTIVES_MARKET, names.UA_NOUNS_MARKET, names.UA_GENDER_MARKET)
+    'retail': {
+        "en": (names.EN_ADJECTIVES_RETAIL, names.EN_NOUNS_RETAIL, names.EN_GENDER_RETAIL),
+        "ua": (names.UA_ADJECTIVES_RETAIL, names.UA_NOUNS_RETAIL, names.UA_GENDER_RETAIL)
     }
 }
 
@@ -26,7 +26,7 @@ def pseudonym(seed: str = None, language: str = "en", theme: str = 'default') ->
     Args:
         seed (str, optional): The input seed string. If None or empty, a random seed will be generated.
         language (str): The language code ("en" for English, "ua" for Ukrainian).
-        theme (str): The theme for the pseudonym ("default", "business", or "market").
+        theme (str): The theme for the pseudonym ("default", "business", or "retail").
 
     Returns:
         str: A pseudonym in the format "Adjective Noun".

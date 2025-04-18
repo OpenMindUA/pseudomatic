@@ -90,22 +90,22 @@ UA_GENDER_BUSINESS = [
     "M"
 ]
 
-# Market lists
-EN_ADJECTIVES_MARKET = {'M': [
+# Retail lists
+EN_ADJECTIVES_RETAIL = {'M': [
     "Affordable", "Attractive", "Bargain", "Branded", "Convenient", "Discounted", "Exclusive", "Fresh", "Handcrafted",
     "Limited", "Luxury", "Organic", "Popular", "Premium", "Promotional", "Quality", "Seasonal", "Trendy", "Unique",
     "Valuable", "Vintage", "Wholesale", "Retail", "Fashionable", "Bestselling"
 ]}
 
-EN_NOUNS_MARKET = [
+EN_NOUNS_RETAIL = [
     "Boutique", "Buyer", "Cashier", "Consumer", "Customer", "Discount", "Display", "Mall", "Marketplace", "Merchant",
     "Outlet", "Product", "Promotion", "Purchase", "Retailer", "Sale", "Seller", "Shelf", "Shop", "Shopper",
     "Store", "Supermarket", "Vendor", "Warehouse", "Brand"
 ]
 
-EN_GENDER_MARKET = ['M'] * len(EN_NOUNS_MARKET)
+EN_GENDER_RETAIL = ['M'] * len(EN_NOUNS_RETAIL)
 
-UA_ADJECTIVES_MARKET = {
+UA_ADJECTIVES_RETAIL = {
     'M': [
         "Доступний", "Привабливий", "Вигідний", "Брендовий", "Зручний", "Знижений", "Ексклюзивний", "Свіжий",
         "Рукотворний",
@@ -127,13 +127,13 @@ UA_ADJECTIVES_MARKET = {
     ]
 }
 
-UA_NOUNS_MARKET = [
+UA_NOUNS_RETAIL = [
     "Бутік", "Покупець", "Касир", "Споживач", "Клієнт", "Знижка", "Вітрина", "Торговий центр", "Ринок", "Торговець",
     "Аутлет", "Товар", "Акція", "Покупка", "Роздрібник", "Розпродаж", "Продавець", "Полиця", "Магазин", "Шопер",
     "Крамниця", "Супермаркет", "Постачальник", "Склад", "Бренд"
 ]
 
-UA_GENDER_MARKET = [
+UA_GENDER_RETAIL = [
     "M", "M", "M", "M", "M", "F", "F", "M", "M", "M",
     "M", "M", "F", "F", "M", "M", "M", "F", "M", "M",
     "F", "M", "M", "M", "M"
