@@ -9,6 +9,7 @@ Pseudomatic is a Python-based tool for generating pseudonyms based on a seed str
   - Ukrainian (`ua`)
 - Generates pseudonyms in the format: `Adjective Noun` (e.g., "Brave Fox" or "Хоробрий Лис").
 - Deterministic output: the same seed and language will always produce the same pseudonym.
+- Supports random pseudonym generation when no seed is provided.
 
 ## Installation
 
@@ -45,6 +46,14 @@ print(pseudonym_en)  # Example: "Brave Fox"
 # Generate a pseudonym in Ukrainian
 pseudonym_ua = pseudonym("JohnDoe", language="ua")
 print(pseudonym_ua)  # Example: "Хоробрий Лис"
+
+# Generate a random pseudonym (no seed provided)
+random_pseudonym = pseudonym(language="en")
+print(random_pseudonym)  # Example: "Curious Elephant"
+
+# Generate a random pseudonym in Ukrainian
+random_pseudonym_ua = pseudonym(language="ua")
+print(random_pseudonym_ua)  # Example: "Цікавий Слон"
 
 # Use different themes
 business_pseudonym = pseudonym("JohnDoe", language="en", theme="business")
