@@ -1,4 +1,5 @@
 import hashlib
+
 from . import names
 
 LANGUAGES = {
@@ -49,13 +50,3 @@ def pseudonym(seed: str, language: str = "en", theme: str = 'default') -> str:
     # Combine into a pseudonym
     return f"{adjective} {noun}"
 
-# Example usage
-if __name__ == "__main__":
-
-    print("Testing 'market' theme in English:")
-    for i in range(20):
-        print(pseudonym(f"test-{i}", 'en', 'market'))
-
-    print("\nTesting 'market' theme in Ukrainian:")
-    for i in range(20):
-        print(pseudonym(f"test-{i}", 'ua', 'market'))

@@ -55,7 +55,7 @@ market_pseudonym = pseudonym("JohnDoe", language="ua", theme="market")
 
 Run the script directly:
 ```bash
-python pseudomatic.py
+python -m pseudomatic
 ```
 
 This will generate example pseudonyms in English and Ukrainian using the 'market' theme.
